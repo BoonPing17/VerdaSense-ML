@@ -13,14 +13,15 @@ Experience the model in action without any setup:
 
 ## 📂 Directory Structure
 
-### 1. [data/](./data)
+### 1. Dataset Information
+**Original Dataset Sources:**
+* **Dataset Used** [Link](https://drive.google.com/drive/folders/1yU54p9cBpNvYVCFz6wbPLoO6LqAxaFRL?usp=sharing)
+  * Includes `train.zip`, `validation.zip`, `test-FUSeg.zip`, and `test-DFUC2022.zip`.
+  * **Processing:** 2000+ original images were manually cleaned and split into 1019 Training and 391 Validation samples.
+
 **Original Dataset Sources:**
 * **DFUC 2022:** [Diabetes Foot Ulcer Challenge 2022](https://www.kaggle.com/datasets/pabodhamallawa/dfuc2022-train-release)
 * **FUSeg:** [Foot Ulcer Segmentation Challenge](https://github.com/uwm-bigdata/wound-segmentation/blob/master/data/Foot%20Ulcer%20Segmentation%20Challenge/README.MD/)
-
-Contains the cleaned and split datasets (1019 Training, 391 Validation).
-- `train.zip` / `validation.zip`: The primary split.
-- `test-FUSeg.zip` / `test-DFUC2022.zip`: Individual test sets for benchmarking.
 
 ### 2. [training/](./training)
 - `[FineTuneFromScratch]LoRAFinetuning_MobileSAM.ipynb`: LoRA Finetuning script of MobileSAM.
