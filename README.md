@@ -44,6 +44,27 @@ Experience the model in action without any setup:
 
 ---
 
+## 📊 Experimental Results
+
+Performance comparison across different architectures and fine-tuning methods.
+
+### Test Set: FUSeg
+| Model | IoU | Dice | Recall | Precision | Accuracy |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **DeepLabV3+ with MobileNetV2** | 0.8217 | 0.9021 | 0.9116 | 0.8928 | 0.9976 |
+| **MobileSAM with Adapters** | 0.8689 | 0.9298 | **0.9291** | 0.9306 | 0.9983 |
+| **LoRA finetuned MobileSAM** | **0.8915** | **0.9426** | 0.9206 | **0.9657** | **0.9986** |
+
+### Test Set: DFUC 2022
+| Model | IoU | Dice | Recall | Precision | Accuracy |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **DeepLabV3+ with MobileNetV2** | 0.8050 | 0.8919 | 0.8905 | 0.8934 | 0.9913 |
+| **MobileSAM with Adapters** | 0.8358 | 0.9105 | **0.8947** | 0.9270 | 0.9929 |
+| **LoRA finetuned MobileSAM** | **0.8558** | **0.9223** | 0.8899 | **0.9572** | **0.9940** |
+
+
+---
+
 ## 🛠️ Usage & Environment Setup
 
 This project was developed and tested on **Google Colab** using the **T4 GPU** runtime. 
